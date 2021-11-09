@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 
-# Created by: Mr. Coxall
-# Created on: Dec 2019
+# Created by: Igor
+# Created on: Oct 2021
 # This program uses a list
 
 
 def average_calculator(marks):
+    # This function calculates average
+
     total_mark = 0
     for counter in range(0, len(marks)):
         total_mark = total_mark + marks[counter]
     average = total_mark / (counter + 1)
+
     return average
 
 
@@ -36,6 +39,8 @@ def main():
             print("Invalid input")
     average = average_calculator(marks)
     print("The average is {0:,.0f}%".format(average))
+
+    print("\nDone.")
 
 
 if __name__ == "__main__":
